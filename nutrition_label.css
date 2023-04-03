@@ -1,0 +1,147 @@
+html {
+  font-size: 28px;
+}
+
+body {
+  border: 3px solid black;
+  width: 670px;
+  font-family: Helvetica Black, Helvetica, Arial;
+  box-sizing: border-box
+}
+
+h1 {
+  font: 3.3rem Franklin Gothic Heavy, Arial;
+  text-align: left;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 2.3rem;
+
+}
+
+h2 {
+  font: 0.8rem Helvetica Black, Helvetica, Arial;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+header section {
+  margin: 0;
+  padding: 5px 0px;
+}
+
+header p {
+  margin: 0;
+}
+
+header {
+  border-bottom: 28px solid;
+  margin: 8px 10px;
+}
+
+#calories {
+  margin: 0 10px;
+}
+
+#calories p {
+  font-weight: bold;
+  margin: 0;
+}
+
+#calories dd {
+  font-weight: normal;
+}
+
+dt {
+  display: block;
+  float: left;
+  padding-right: 0.3rem;
+  font-weight: bold;
+
+}
+
+dd {
+  float: left;
+  margin: 0;
+}
+
+dd + dd{
+  float: right;
+  font-weight: bold;
+}
+
+dl {
+  border-top: 1px solid;
+  margin: 0;
+  line-height: 0.9rem;
+  padding-top: 3px;
+  display: inline-block;
+  width: 100%;
+}
+
+section {
+  margin: 0 10px;
+  padding: 0;
+}
+
+#nutrients {
+  border-top: 15px solid;
+  border-bottom: 28px solid;
+}
+
+#nutrients p {
+  font-weight: bold;
+  text-align: right;
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+.breakdowns dt{
+  font-weight: normal;
+}
+
+.breakdowns {
+  margin: 0 0 0 30px;
+  border-bottom: 1px solid;
+}
+
+.breakdowns + dl {
+  border: none;
+}
+
+#daily-values {
+  text-indent: -0.55rem;
+  font-size: 0.9rem;
+  margin: 10px 5px 5px 15px;
+}
+
+#vitamins dt {
+  font-weight: normal;
+}
+
+#vitamins dd {
+  float: right;
+}
+
+#vitamins {
+  border-bottom: 1px solid;
+}
+
+.indented {
+  text-indent: 1.3rem;
+}
+
+table {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+thead tr th {
+  border-bottom: 1px solid black;
+  font-weight: normal;
+  text-align: left;
+}

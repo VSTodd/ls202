@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font: normal 16px Helvetica, Arial, sans-serif;
+      }
+
+      fieldset {
+        width: 600px;
+        padding: 0;
+        margin: 0 auto;
+        border: none;
+      }
+
+      dt {
+        margin-bottom: 5px;
+      }
+
+      dd {
+        margin: 0 0 25px 0;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        width: 100%;
+        height: 30px;
+        padding: 3 10px;
+        font: normal 14px Helvetica, Arial, sans-serif;
+        border: 1px solid #cecece;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: vertical;
+        padding: 3 10px;
+        font: normal 14px Helvetica, Arial, sans-serif;
+        border: 1px solid #cecece;
+      }
+
+      ul {
+        padding-left: 0;
+        list-style: none;
+        font-size: 14px;
+      }
+
+      dl {
+        margin-bottom: 0;
+      }
+
+      dl + dl {
+        margin-top: 0;
+      }
+
+      .partial {
+        display: inline-block;
+        box-sizing: border-box;
+      }
+
+      .halvsies {
+        width: 50%;
+      }
+
+      .thirdsies.left {
+        width: 50%;
+      }
+
+      .thirdsies.middle {
+        width: 10%;
+      }
+
+      .thirdsies.right {
+        width: 40%;
+      }
+
+      .left {
+        padding-right: 5px;
+      }
+
+      .right {
+        padding-left: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl class="partial halvsies left">
+          <dt>
+            <label for="first-name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="first-name" id="first-name">
+          </dd>
+        </dl><!--
+        --><dl class="partial halvsies right">
+          <dt>
+            <label for="last-name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" name="last-name" id="last-name">
+          </dd>
+        </dl>
+
+        <dl>
+          <dt>
+            <label for="email-address">Email</label>
+          </dt>
+          <dd>
+            <input type="email" name="email-address" id="email-address" placeholder="user@server.com">
+          </dd>
+        </dl>
+
+        <dl class="partial thirdsies left">
+          <dt>
+            <label for="city">City</label>
+          </dt>
+          <dd>
+            <input type="text" name="city" id="city">
+          </dd>
+        </dl><!--
+        --><dl class="partial thirdsies mid">
+          <dt>
+            <label for="state">State</label>
+          </dt>
+          <dd>
+            <select name="state" id="state">
+              <option>AK</option>
+              <option>AL</option>
+              <option>AR</option>
+              <option>AZ</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DC</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>IA</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>MA</option>
+              <option>MD</option>
+              <option>ME</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MO</option>
+              <option>MS</option>
+              <option>MT</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>NE</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NV</option>
+              <option>NY</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VA</option>
+              <option>VT</option>
+              <option>WA</option>
+              <option>WI</option>
+              <option>WV</option>
+              <option>WY</option>
+            </select>
+          </dd>
+        </dl><!--
+        --><dl  class="partial thirdsies right">
+          <dt>
+            <label for="zip">Zip Code</label>
+          </dt>
+          <dd>
+            <input type="text" name="zip" id="zip" pattern="[0-9]{5}" placeholder="00000">
+          </dd>
+        </dl>
+
+        <p>Which of these colors do you like best?</p>
+        <ul>
+          <li>
+            <label><input type="radio" name="color" value="red">Red</label>
+          </li>
+          <li>
+            <label><input type="radio" name="color" value="orange">Orange</label>
+          </li>
+          <li>
+            <label><input type="radio" name="color" value="yellow">Yellow</label>
+          </li>
+          <li>
+            <label><input type="radio" name="color" value="green">Green</label>
+          </li>
+          <li>
+            <label><input type="radio" name="color" value="blue">Blue</label>
+          </li>
+          <li>
+            <label><input type="radio" name="color" value="indigo">Indigo</label>
+          </li>
+          <li>
+            <label><input type="radio" name="color" value="violet">Violet</label>
+          </li>
+        </ul>
+
+        <p>Which web technologies do you want to learn?</p>
+        <ul>
+          <li>
+            <label><input type="checkbox" name="html">HTML</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="css">CSS</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="javascript">Javascript</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="ruby">Ruby</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="rails">Rails</label>
+          </li>
+        </ul>
+
+        <dl>
+          <dt>
+            <label for="comments">Comments</label>
+          </dt>
+          <dd>
+            <textarea name="comments" rows="6" cols="80"></textarea>
+          </dd>
+        </dl>
+        <input type="hidden" value="2023-03-01">
+
+        <button name="send">Send</button>
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+  </body>
